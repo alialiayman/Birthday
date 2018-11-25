@@ -1,52 +1,43 @@
+<div class="birthday-container">
+  <div class="title">
+    Birthdays as of {{ today| date: 'EEEE dd-MMM-yyyy' }}
+  </div>
 <table class="table">
-  <tr>
-
+  <tr class="card-header">
     <td>Name</td>
     <td>Birthday</td>
     <td>Age Now</td>
     <td>15th Birthday</td>
     <td>Remaining</td>
-
-
   </tr>
-
-  <tr>
-
-
+  <tr class="card-body">
     <td>Modi</td>
     <td>{{modiDOB | date: 'EEEE dd-MMM-yyyy'}}</td>
     <td>{{modiAge}}</td>
     <td>{{modi15thBirthday| date: 'EEEE dd-MMM-yyyy'}}</td>
-<td>{{modiRemaining}}</td>
+    <td>{{modiRemaining | number}}</td>
   </tr>
-
   <tr>
-
-
     <td>Minna</td>
     <td>{{minnaDOB | date: 'EEEE dd-MMM-yyyy'}}</td>
     <td>{{minnaAge}}</td>
     <td>{{minna15thBirthday| date: 'EEEE dd-MMM-yyyy'}}</td>
-    <td>{{minnaRemaining}}</td>
+    <td>{{minnaRemaining| number}}</td>
   </tr>
-
   <tr>
-
-
     <td>Noha</td>
     <td>{{nohaDOB | date: 'EEEE dd-MMM-yyyy'}}</td>
     <td>{{nohaAge}}</td>
     <td>{{noha15thBirthday| date: 'EEEE dd-MMM-yyyy'}}</td>
-    <td>{{nohaRemaining}}</td>
+    <td>{{nohaRemaining | number}}</td>
   </tr>
-
   <tr>
-
-
     <td>Berry</td>
     <td>{{berryDOB | date: 'EEEE dd-MMM-yyyy'}}</td>
     <td>{{berryAge}}</td>
     <td>{{berry15thBirthday| date: 'EEEE dd-MMM-yyyy'}}</td>
-    <td>{{berryRemaining}}</td>
+    <td>{{berryRemaining | number}}</td>
   </tr>
 </table>
+
+</div>
